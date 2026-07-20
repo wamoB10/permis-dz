@@ -1,4 +1,4 @@
-import { ShieldCheck, Lock, FileText, Mail, Cookie } from "lucide-react"
+import { ShieldCheck, Lock, FileText, Mail, Cookie, Activity, Settings, Shield, UserCheck } from "lucide-react"
 import type { Metadata } from "next"
 import BreadcrumbJsonLd from "@/components/seo/breadcrumb-json-ld"
 
@@ -55,7 +55,10 @@ export default function PrivacyPage() {
         </div>
 
         <div className="bg-card rounded-xl p-6 shadow-sm border">
-          <h2 className="text-xl font-semibold mb-3">3. Données de navigation</h2>
+          <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+            <Activity className="h-5 w-5 text-primary" />
+            3. Données de navigation
+          </h2>
           <p>
             Notre hébergeur (Vercel) peut enregistrer automatiquement des données techniques anonymes (adresse IP, type de navigateur, pages visitées)
             à des fins strictement statistiques et de sécurité. Ces informations ne permettent pas de vous identifier personnellement
@@ -84,7 +87,10 @@ export default function PrivacyPage() {
         </div>
 
         <div className="bg-card rounded-xl p-6 shadow-sm border">
-          <h2 className="text-xl font-semibold mb-3">5. Services tiers</h2>
+          <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+            <Settings className="h-5 w-5 text-primary" />
+            5. Services tiers
+          </h2>
           <p>
             Nous n&apos;intégrons actuellement aucun service tiers susceptible de collecter vos données (réseaux sociaux, outils d&apos;analyse,
             régies publicitaires). Lors de l&apos;activation future de Google AdSense, Google pourra traiter certaines données conformément
@@ -93,7 +99,10 @@ export default function PrivacyPage() {
         </div>
 
         <div className="bg-card rounded-xl p-6 shadow-sm border">
-          <h2 className="text-xl font-semibold mb-3">6. Sécurité</h2>
+          <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+            <Shield className="h-5 w-5 text-primary" />
+            6. Sécurité
+          </h2>
           <p>
             Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données
             contre tout accès non autorisé, modification, divulgation ou destruction.
@@ -101,7 +110,10 @@ export default function PrivacyPage() {
         </div>
 
         <div className="bg-card rounded-xl p-6 shadow-sm border">
-          <h2 className="text-xl font-semibold mb-3">7. Vos droits</h2>
+          <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+            <UserCheck className="h-5 w-5 text-primary" />
+            7. Vos droits
+          </h2>
           <p>
             Conformément à la législation algérienne et aux principes généraux de protection des données,
             vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression des informations vous concernant.

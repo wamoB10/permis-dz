@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" })
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
     icons: {
-    icon: "/favicon.ico?v=2",
+    icon: "/favicon.ico?v=3",
   },
   title: {
     default: "Permi Algérie - Réussissez votre code de la route",

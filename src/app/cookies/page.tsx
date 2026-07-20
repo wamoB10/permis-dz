@@ -1,4 +1,4 @@
-import { Cookie, Info, Settings, Mail, Megaphone } from "lucide-react"
+import { Cookie, Info, Settings, Mail, Clock, Megaphone } from "lucide-react"
 import type { Metadata } from "next"
 import BreadcrumbJsonLd from "@/components/seo/breadcrumb-json-ld"
 
@@ -61,10 +61,10 @@ export default function CookiesPage() {
         <div className="bg-card rounded-xl p-6 shadow-sm border">
           <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
             <Megaphone className="h-5 w-5 text-primary" />
-            Cookies publicitaires (Google AdSense) — à venir
+            Cookies publicitaires ( à venir )
           </h2>
           <p>
-            Dans le cadre de la monétisation future du Site via <strong>Google AdSense</strong>, des cookies publicitaires
+            Dans le cadre de la monétisation future du Site, des cookies publicitaires
             pourront être déposés par Google et ses partenaires afin de :
           </p>
           <ul className="list-disc pl-5 mt-2 space-y-1">
@@ -91,7 +91,10 @@ export default function CookiesPage() {
         </div>
 
         <div className="bg-card rounded-xl p-6 shadow-sm border">
-          <h2 className="text-xl font-semibold mb-3">Durée de conservation</h2>
+                    <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
+            <Clock className="h-5 w-5 text-primary" />
+            Durée de conservation
+          </h2>
           <p>
             Les cookies techniques ont une durée de vie limitée à la session de navigation
             ou, au maximum, à quelques mois pour mémoriser vos choix (consentement, préférences).
