@@ -381,7 +381,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "passage-pieton-dodane",
         name: "Passage pour piétons (Dodane)",
         description: "Panneau d'indication d'un passage pour piétons de type Dodane.",
-        image: "/images/classification/pieton-dodane.JPG"
+        image: "/images/classification/pieton-dodane.jpg"
       },
       {
         id: "fin-interdiction-avertisseur-sonore",
@@ -657,7 +657,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "autoroute",
         name: "Entrée d'autoroute",
         description: "Panneau vert avec pont : entrée sur une voie d'autoroute.",
-        image: "/images/classification/autoroute.png"
+        image: "/images/classification/Autoroute.png"
       },
       {
         id: "restaurant",
@@ -921,7 +921,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "autoroute",
         name: "Entrée d'autoroute",
         description: "Panneau vert avec pont : entrée sur une voie d'autoroute.",
-        image: "/images/classification/autoroute.png"
+        image: "/images/classification/Autoroute.png"
       },
       {
         id: "fin-interdictions-rond-blanc",
@@ -1329,7 +1329,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "autoroute",
         name: "Entrée d'autoroute",
         description: "Panneau vert avec pont : entrée sur une voie d'autoroute.",
-        image: "/images/classification/autoroute.png"
+        image: "/images/classification/Autoroute.png"
       },
       {
         id: "stop",
