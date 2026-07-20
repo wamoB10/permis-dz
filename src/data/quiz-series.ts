@@ -92,7 +92,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "risque-incendie-foret",
         name: "Risque d'incendie de forêt",
         description: "Panneau carré représentant un arbre en flammes : attention au risque d'incendie de forêt.",
-        image: "/images/classification/feu-foret.WEBP"
+        image: "/images/classification/feu-foret.png"
       },
       {
         id: "acces-interdit-cyclistes",
@@ -225,7 +225,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "vitesse-conseillee-70",
         name: "Vitesse conseillée 70 km/h",
         description: "Panneau carré bleu avec 70 : vitesse conseillée à 70 km/h.",
-        image: "/images/classification/conseille-70.WEBP"
+        image: "/images/classification/conseille-70.png"
       },
       {
         id: "danger-temporaire",
@@ -279,7 +279,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "balise-musoir",
         name: "Balise de musoir",
         description: "Balise rouge et blanche disposée sur un îlot directionnel (musoir).",
-        image: "/images/classification/balise-musoir.WEBP"
+        image: "/images/classification/balise-musoir.png"
       },
       {
         id: "contournement-droite",
@@ -303,7 +303,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-110",
         name: "Fin de limitation de vitesse à 110 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 110 km/h.",
-        image: "/images/classification/fin-de-limititation-vitesse-110.WEBP"
+        image: "/images/classification/fin-de-limititation-vitesse-110.png"
       },
       {
         id: "fin-route-prioritaire",
@@ -345,7 +345,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "interdit-vehicules-plus-10m",
         name: "Interdiction aux véhicules de plus de 10 mètres",
         description: "Cercle rouge : interdiction de circuler aux véhicules de plus de 10 mètres de long.",
-        image: "/images/classification/interdit-camion-10m.WEBP"
+        image: "/images/classification/interdit-camion-10m.png"
       },
       {
         id: "interdiction-depasser-camions-10m",
@@ -363,7 +363,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-90",
         name: "Fin de limitation à 90 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 90 km/h.",
-        image: "/images/classification/fin-limit-90.WEBP"
+        image: "/images/classification/fin-limit-90.png"
       },
       {
         id: "site-touristique",
@@ -375,7 +375,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "transition-vitesse-90-70",
         name: "Transition de 90 à 70 km/h",
         description: "Panneau indiquant le passage de 90 km/h à 70 km/h.",
-        image: "/images/classification/90-70.WEBP"
+        image: "/images/classification/90-70.png"
       },
       {
         id: "passage-pieton-dodane",
@@ -417,7 +417,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "verglas-frequent",
         name: "Verglas fréquent",
         description: "Triangle rouge avec flocon : annonce un risque de verglas fréquent.",
-        image: "/images/classification/verglas_frequent.WEBP"
+        image: "/images/classification/verglas_frequent.png"
       }
     ]
   },
@@ -495,7 +495,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-110",
         name: "Fin de limitation de vitesse à 110 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 110 km/h.",
-        image: "/images/classification/fin-de-limititation-vitesse-110.WEBP"
+        image: "/images/classification/fin-de-limititation-vitesse-110.png"
       },
       {
         id: "chaussee-glissante-temporaire",
@@ -573,7 +573,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "interdiction-avertisseur-sonore",
         name: "Interdiction d'utiliser l'avertisseur sonore",
         description: "Cercle rouge avec klaxon barré : interdiction d'utiliser l'avertisseur sonore.",
-        image: "/images/classification/interdit-klaxon.WEBP"
+        image: "/images/classification/interdit-klaxon.png"
       },
       {
         id: "priorite-oran",
@@ -591,7 +591,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "balise-virage",
         name: "Balise de virage",
         description: "Balise blanche et rouge indiquant un virage.",
-        image: "/images/classification/balise-virage.WEBP"
+        image: "/images/classification/balise-virage.png"
       },
       {
         id: "vitesse-maximale-90",
@@ -609,7 +609,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-30-v2",
         name: "Fin de limitation de vitesse à 30 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 30 km/h.",
-        image: "/images/classification/Panneau-fin-de-limitation-30.WEBP"
+        image: "/images/classification/Panneau-fin-de-limitation-30.png"
       },
       {
         id: "interdiction-depasser",
@@ -759,7 +759,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-110",
         name: "Fin de limitation de vitesse à 110 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 110 km/h.",
-        image: "/images/classification/fin-de-limititation-vitesse-110.WEBP"
+        image: "/images/classification/fin-de-limititation-vitesse-110.png"
       },
       {
         id: "passage-pietons",
@@ -849,7 +849,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "balise-virage",
         name: "Balise de virage",
         description: "Balise blanche et rouge indiquant un virage.",
-        image: "/images/classification/balise-virage.WEBP"
+        image: "/images/classification/balise-virage.png"
       },
       {
         id: "triangle-blanc-priorite",
@@ -897,7 +897,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-30-v2",
         name: "Fin de limitation de vitesse à 30 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 30 km/h.",
-        image: "/images/classification/Panneau-fin-de-limitation-30.WEBP"
+        image: "/images/classification/Panneau-fin-de-limitation-30.png"
       },
       {
         id: "fin-route-prioritaire",
@@ -939,7 +939,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "vitesse-conseillee-70",
         name: "Vitesse conseillée 70 km/h",
         description: "Panneau carré bleu avec 70 : vitesse conseillée à 70 km/h.",
-        image: "/images/classification/conseille-70.WEBP"
+        image: "/images/classification/conseille-70.png"
       },
       {
         id: "danger-temporaire",
@@ -993,7 +993,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "balise-musoir",
         name: "Balise de musoir",
         description: "Balise rouge et blanche disposée sur un îlot directionnel (musoir).",
-        image: "/images/classification/balise-musoir.WEBP"
+        image: "/images/classification/balise-musoir.png"
       },
       {
         id: "contournement-droite",
@@ -1203,7 +1203,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-110",
         name: "Fin de limitation de vitesse à 110 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 110 km/h.",
-        image: "/images/classification/fin-de-limititation-vitesse-110.WEBP"
+        image: "/images/classification/fin-de-limititation-vitesse-110.png"
       },
       {
         id: "borne-detresse",
@@ -1377,7 +1377,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-30-v2",
         name: "Fin de limitation de vitesse à 30 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 30 km/h.",
-        image: "/images/classification/Panneau-fin-de-limitation-30.WEBP"
+        image: "/images/classification/Panneau-fin-de-limitation-30.png"
       },
       {
         id: "cedez-le-passage-150m",
@@ -1623,7 +1623,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "risque-incendie-foret",
         name: "Risque d'incendie de forêt",
         description: "Panneau carré représentant un arbre en flammes : attention au risque d'incendie de forêt.",
-        image: "/images/classification/feu-foret.WEBP"
+        image: "/images/classification/feu-foret.png"
       },
       {
         id: "acces-interdit-cyclistes",
@@ -1695,7 +1695,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "balise-virage",
         name: "Balise de virage",
         description: "Balise blanche et rouge indiquant un virage.",
-        image: "/images/classification/balise-virage.WEBP"
+        image: "/images/classification/balise-virage.png"
       },
       {
         id: "cavaliers",
@@ -1773,7 +1773,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "interdiction-avertisseur-sonore",
         name: "Interdiction d'utiliser l'avertisseur sonore",
         description: "Cercle rouge avec klaxon barré : interdiction d'utiliser l'avertisseur sonore.",
-        image: "/images/classification/interdit-klaxon.WEBP"
+        image: "/images/classification/interdit-klaxon.png"
       },
       {
         id: "separation-voies",
@@ -1785,7 +1785,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-110",
         name: "Fin de limitation de vitesse à 110 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 110 km/h.",
-        image: "/images/classification/fin-de-limititation-vitesse-110.WEBP"
+        image: "/images/classification/fin-de-limititation-vitesse-110.png"
       },
       {
         id: "fin-limitation-30",
@@ -1833,7 +1833,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "fin-limitation-30-v2",
         name: "Fin de limitation de vitesse à 30 km/h",
         description: "Cercle blanc à bordure noire avec barre oblique : fin de la limitation à 30 km/h.",
-        image: "/images/classification/Panneau-fin-de-limitation-30.WEBP"
+        image: "/images/classification/Panneau-fin-de-limitation-30.png"
       },
       {
         id: "vitesse-minimale-obligatoire",
@@ -1959,7 +1959,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "vitesse-conseillee-70",
         name: "Vitesse conseillée 70 km/h",
         description: "Panneau carré bleu avec 70 : vitesse conseillée à 70 km/h.",
-        image: "/images/classification/conseille-70.WEBP"
+        image: "/images/classification/conseille-70.png"
       },
       {
         id: "premier-virage-gauche",
@@ -1989,7 +1989,7 @@ export const quizSeriesList: QuizSeries[] = [
         id: "tramway",
         name: "Tramway",
         description: "Triangle rouge avec tramway : annonce un passage de tramway.",
-        image: "/images/classification/tram.WEBP"
+        image: "/images/classification/tram.png"
       },
       {
         id: "borne-detresse",

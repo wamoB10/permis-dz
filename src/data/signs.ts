@@ -330,7 +330,7 @@ export const signs: Sign[] = [
     name: "Interdit aux véhicules de plus de 10 mètres",
     description: "Interdit aux véhicules dépassant 10 m de longueur.",
     longDescription: "Les véhicules très longs (camions articulés, bus longs) ne peuvent pas emprunter cette route à cause de virages serrés ou de gabarits limités.",
-    image: "/images/classification/interdit-camion-10m.webp"
+    image: "/images/classification/interdit-camion-10m.png"
   },
   {
     id: "interdiction-16",
@@ -338,7 +338,7 @@ export const signs: Sign[] = [
     name: "Signaux sonores interdits",
     description: "Usage du klaxon interdit.",
     longDescription: "Il est interdit d'utiliser l'avertisseur sonore dans cette zone (hôpital, école, zone résidentielle).",
-    image: "/images/classification/interdit-klaxon.webp"
+    image: "/images/classification/interdit-klaxon.png"
   },
   {
     id: "interdiction-17",
@@ -582,7 +582,7 @@ export const signs: Sign[] = [
     name: "Ne pas dépasser la vitesse indiquée sur les deux voies",
     description: "Limite de vitesse sur toutes les voies.",
     longDescription: "La vitesse maximale autorisée est la même pour toutes les voies de circulation. Respectez-la, quelle que soit votre file.",
-    image: "/images/classification/90-70.webp"
+    image: "/images/classification/90-70.png"
   },
   {
     id: "indication-8",
@@ -654,7 +654,7 @@ export const signs: Sign[] = [
     name: "Feu de forêt",
     description: "Risque d'incendie, prudence en forêt.",
     longDescription: "Soyez particulièrement vigilant, ne jetez pas de cigarette et évitez tout comportement à risque d'incendie.",
-    image: "/images/classification/feu-foret.webp"
+    image: "/images/classification/feu-foret.png"
   },
   {
     id: "indication-17",
@@ -670,7 +670,7 @@ export const signs: Sign[] = [
     name: "Vitesse conseillée 70",
     description: "Vitesse recommandée à 70 km/h.",
     longDescription: "Pour votre sécurité, il est conseillé de ne pas dépasser 70 km/h, même si la vitesse maximale autorisée est plus élevée.",
-    image: "/images/classification/conseille-70.webp"
+    image: "/images/classification/conseille-70.png"
   },
   {
     id: "indication-19",
@@ -678,7 +678,7 @@ export const signs: Sign[] = [
     name: "Station tramway",
     description: "Arrêt ou station de tramway.",
     longDescription: "Indique la présence d'un arrêt de tramway. Soyez attentif aux voyageurs qui traversent.",
-    image: "/images/classification/tram.webp"
+    image: "/images/classification/tram.png"
   },
   {
     id: "indication-20",
@@ -726,7 +726,7 @@ export const signs: Sign[] = [
     name: "Balise de virage très prononcé à droite",
     description: "Virage dangereux à droite, balise de signalisation.",
     longDescription: "Cette balise renforce la visibilité du virage. Ralentissez et serrez bien votre droite.",
-    image: "/images/classification/balise-virage.webp"
+    image: "/images/classification/balise-virage.png"
   },
   {
     id: "indication-26",
@@ -857,7 +857,7 @@ export const signs: Sign[] = [
     name: "Fin de limitation de vitesse à 30 km/h",
     description: "Fin de la zone limitée à 30 km/h.",
     longDescription: "Vous pouvez à nouveau rouler à la vitesse normale autorisée sur cette voie.",
-    image: "/images/classification/Panneau-fin-de-limitation-30.webp"
+    image: "/images/classification/Panneau-fin-de-limitation-30.png"
   },
   {
     id: "fin-2",
@@ -873,7 +873,7 @@ export const signs: Sign[] = [
     name: "Fin de limitation de vitesse à 70 km/h",
     description: "Fin de la zone limitée à 70 km/h.",
     longDescription: "La vitesse maximale redevient celle de la route.",
-    image: "/images/classification/fin-limit-70.webp"
+    image: "/images/classification/fin-limit-70.png"
   },
   {
     id: "fin-4",
@@ -881,7 +881,7 @@ export const signs: Sign[] = [
     name: "Fin de limitation de vitesse à 90 km/h",
     description: "Fin de la zone limitée à 90 km/h.",
     longDescription: "La vitesse maximale redevient celle de la route.",
-    image: "/images/classification/fin-limit-90.webp"
+    image: "/images/classification/fin-limit-90.png"
   },
   {
     id: "fin-5",
@@ -889,7 +889,7 @@ export const signs: Sign[] = [
     name: "Fin de limitation de vitesse à 110 km/h",
     description: "Fin de la zone limitée à 110 km/h.",
     longDescription: "La vitesse maximale redevient celle de la route (généralement autoroute).",
-    image: "/images/classification/fin-de-limititation-vitesse-110.webp"
+    image: "/images/classification/fin-de-limititation-vitesse-110.png"
   },
   {
     id: "fin-6",
