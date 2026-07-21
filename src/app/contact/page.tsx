@@ -8,17 +8,18 @@ export default function ContactPage() {
   const [sent, setSent] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    const form = e.currentTarget
-    const data = new FormData(form)
-    await fetch("https://formspree.io/f/https://formspree.io/f/xlgqlnra", {
-      method: "POST",
-      body: data,
-      headers: { Accept: "application/json" },
-    })
-    setSent(true)
-  }
+  e.preventDefault()
+  const form = e.currentTarget
+  const data = new FormData(form)
+  data.append("access_key", "a32d0b87-2cf5-4088-9bfa-a56cb656c236")
 
+  const res = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: data,
+  })
+
+  if (res.ok) setSent(true)
+}
   return (
     <div className="container py-10">
       <BreadcrumbJsonLd
