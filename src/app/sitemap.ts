@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next"
-import { quizSeriesList } from "@/data/quiz-series"
+import { testSeriesList } from "@/data/test-series"
 import { prioritySeriesList } from "@/data/priority-series"
 import { siteConfig } from "@/lib/site-config"
 
@@ -11,9 +11,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/panneaux`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/priorites`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/questions-theoriques`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/quiz`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/quiz/panneaux`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${baseUrl}/quiz/priorites`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/test`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/test/panneaux`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/test/priorites`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/series`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/series-panneaux`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/series-priorites`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/cookies`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ]
 
-  const seriesPages: MetadataRoute.Sitemap = quizSeriesList
+  const seriesPages: MetadataRoute.Sitemap = testSeriesList
     .filter((s) => s.items.length > 0)
     .map((s) => ({
       url: `${baseUrl}/series/${s.id}`,

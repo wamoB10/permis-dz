@@ -6,14 +6,14 @@ import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import SignImage from "@/components/ui/sign-image"
-import type { QuizSeries } from "@/data/quiz-series"
-import { quizSeriesList } from "@/data/quiz-series"
+import type { TestSeries } from "@/data/test-series"
+import { testSeriesList } from "@/data/test-series"
 
-export default function SeriesDetailClient({ series }: { series: QuizSeries }) {
+export default function SeriesDetailClient({ series }: { series: TestSeries }) {
   const router = useRouter()
   const currentId = series.id
-  const prevSeries = quizSeriesList.find(s => s.id === currentId - 1 && s.items.length > 0)
-  const nextSeries = quizSeriesList.find(s => s.id === currentId + 1 && s.items.length > 0)
+  const prevSeries = testSeriesList.find(s => s.id === currentId - 1 && s.items.length > 0)
+  const nextSeries = testSeriesList.find(s => s.id === currentId + 1 && s.items.length > 0)
 
   // Navigation au clavier (flèches gauche/droite)
   useEffect(() => {
@@ -113,7 +113,7 @@ export default function SeriesDetailClient({ series }: { series: QuizSeries }) {
   )
 }
 
-function PanelCard({ item }: { item: QuizSeries["items"][number] }) {
+function PanelCard({ item }: { item: TestSeries["items"][number] }) {
   const [revealed, setRevealed] = useState(false)
 
   return (

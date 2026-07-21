@@ -1,24 +1,24 @@
 import Image from "next/image"
 import Link from "next/link"
-import { BookOpen } from "lucide-react"
 import MobileNav from "./mobile-nav"
+import ThemeToggle from "@/components/ui/theme-toggle"
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background">
+    <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between py-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/logonavbar.png"
+            src="/images/nav-logo.png"
             alt="Logo Permis Algérie"
-            width={32}
-            height={32}
-            className="h-8 w-auto object-contain"
+            width={56}
+            height={56}
+            className="h-12 w-auto object-contain"
             priority
           />
           <span className="text-xl font-bold">Permis Algérie</span>
         </Link>
-        <nav className="hidden md:flex gap-6" aria-label="Navigation principale">
+        <nav className="hidden md:flex items-center gap-6" aria-label="Navigation principale">
           <Link href="/" className="text-sm font-medium transition-colors hover:text-primary">
             Accueil
           </Link>
@@ -34,8 +34,10 @@ export default function Header() {
           <Link href="/series" className="text-sm font-medium transition-colors hover:text-primary">
             Séries
           </Link>
+          <ThemeToggle />
         </nav>
-        <div className="md:hidden">
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
           <MobileNav />
         </div>
       </div>

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/footer"
 import CookieConsent from "@/components/layout/cookie-consent"
 import OrganizationJsonLd from "@/components/seo/organization-json-ld"
 import { siteConfig } from "@/lib/site-config"
+import { ThemeProvider } from "@/lib/theme-provider"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     "examen",
     "panneaux",
     "priorités",
-    "quiz",
+    "test",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
@@ -56,15 +57,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <body className={inter.className}>
         <OrganizationJsonLd />
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <CookieConsent />
+        <ThemeProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <CookieConsent />
+        </ThemeProvider>
       </body>
     </html>
   )

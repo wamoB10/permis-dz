@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description: "Choisissez votre série de révision : Panneaux de signalisation ou Règles de priorité.",
 }
 
-export default function QuizChoicePage() {
+export default function TestChoicePage() {
   return (
     <div className="container py-20">
       <BreadcrumbJsonLd
         items={[
           { name: "Accueil", href: "/" },
-          { name: "Séries de révision", href: "/quiz" },
+          { name: "Séries de révision", href: "/test" },
         ]}
       />
 
@@ -70,23 +70,23 @@ export default function QuizChoicePage() {
         </Card>
       </div>
 
-      {/* Section Quiz interactifs */}
+      {/* Section Tests interactifs */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold mb-4">Testez-vous en conditions réelles</h2>
         <p className="text-muted-foreground text-lg">
-          Une fois vos révisions terminées, passez un quiz chronométré pour évaluer votre niveau.
+          Une fois vos révisions terminées, passez un test chronométré pour évaluer votre niveau.
         </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
-        <Link href="/quiz/panneaux">
+        <Link href="/test/panneaux">
           <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
             <CardHeader className="pb-2">
               <div className="flex items-center gap-3">
                 <div className="p-2.5 bg-primary/15 rounded-full group-hover:bg-primary/25 transition-colors">
                   <Play className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">Quiz Panneaux</CardTitle>
+                <CardTitle className="text-xl">Test Panneaux</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
@@ -97,14 +97,14 @@ export default function QuizChoicePage() {
           </Card>
         </Link>
 
-        <Link href="/quiz/priorites">
+        <Link href="/test/priorites">
           <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
             <CardHeader className="pb-2">
               <div className="flex items-center gap-3">
                 <div className="p-2.5 bg-primary/15 rounded-full group-hover:bg-primary/25 transition-colors">
                   <Play className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">Quiz Priorités</CardTitle>
+                <CardTitle className="text-xl">Test Priorités</CardTitle>
               </div>
             </CardHeader>
             <CardContent>

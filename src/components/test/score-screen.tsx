@@ -18,7 +18,7 @@ export default function ScoreScreen({ score, total, onRestart }: Props) {
     <Card className="max-w-md mx-auto">
       <CardContent className="flex flex-col items-center p-6 space-y-4">
         <Award className="h-12 w-12 text-primary" />
-        <h2 className="text-2xl font-bold">Quiz terminé</h2>
+        <h2 className="text-2xl font-bold">Test terminé</h2>
         <p className="text-4xl font-extrabold">
           {score} / {total}
         </p>

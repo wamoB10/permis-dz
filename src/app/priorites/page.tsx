@@ -52,9 +52,9 @@ export default function PrioritesPage() {
       </div>
 
       {/* Règles de dépassement */}
-      <div className="mb-12 bg-orange-50 border border-orange-200 rounded-2xl p-6">
-        <h2 className="text-2xl font-bold mb-3 text-orange-800">Règles de dépassement</h2>
-        <ul className="list-disc pl-5 space-y-1 text-sm">
+      <div className="mb-12 bg-orange-50 dark:bg-orange-950/60 border border-orange-200 dark:border-orange-800/50 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold mb-3 text-orange-800 dark:text-orange-300">Règles de dépassement</h2>
+        <ul className="list-disc pl-5 space-y-1 text-sm dark:text-orange-100/90">
           <li>On ne double <strong>jamais par la droite</strong>.</li>
           <li>On ne double pas si un <strong>panneau l'interdit</strong>.</li>
           <li>On ne double pas si une <strong>ligne continue</strong> est présente.</li>

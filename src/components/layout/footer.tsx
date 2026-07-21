@@ -14,10 +14,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-2">
-            <h3 className="text-sm font-semibold">Quiz</h3>
+            <h3 className="text-sm font-semibold">Tests</h3>
             <ul className="space-y-1">
-              <li><Link href="/series-panneaux" className="text-sm text-muted-foreground hover:text-primary">Quiz Panneaux</Link></li>
-              <li><Link href="/series-priorites" className="text-sm text-muted-foreground hover:text-primary">Quiz Priorités</Link></li>
+              <li><Link href="/series-panneaux" className="text-sm text-muted-foreground hover:text-primary">Test Panneaux</Link></li>
+              <li><Link href="/series-priorites" className="text-sm text-muted-foreground hover:text-primary">Test Priorités</Link></li>
             </ul>
           </div>
           <div className="space-y-2">

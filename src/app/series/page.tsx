@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { quizSeriesList } from "@/data/quiz-series"
+import { testSeriesList } from "@/data/test-series"
 import { prioritySeriesList } from "@/data/priority-series"
 import type { Metadata } from "next"
 import BreadcrumbJsonLd from "@/components/seo/breadcrumb-json-ld"
@@ -26,7 +26,7 @@ export default function SeriesPage() {
           Cliquez sur une série pour commencer.
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {quizSeriesList.map((series) => (
+          {testSeriesList.map((series) => (
             <Link key={series.id} href={`/series/${series.id}`}>
               <Button
                 variant={series.items.length > 0 ? "default" : "outline"}

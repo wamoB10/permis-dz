@@ -15,7 +15,7 @@ export default function PrioritySeriesPage() {
       <BreadcrumbJsonLd
         items={[
           { name: "Accueil", href: "/" },
-          { name: "Séries de révision", href: "/quiz" },
+          { name: "Séries de révision", href: "/test" },
           { name: "Séries de priorités", href: "/series-priorites" },
         ]}
       />

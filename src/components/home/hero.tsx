@@ -34,7 +34,7 @@ export default function Hero() {
             <span className="text-primary">Algérien</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-            Apprenez et entraînez-vous gratuitement, sans inscription. Panneaux, priorités, questions théoriques et quiz. Commencez immédiatement.
+            Apprenez et entraînez-vous gratuitement, sans inscription. Panneaux, priorités, questions théoriques et tests. Commencez immédiatement.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="gap-2">
@@ -43,8 +43,8 @@ export default function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2">
-              <Link href="/quiz">
-                <ArrowRight className="h-5 w-5" /> Faire un quiz
+              <Link href="/test">
+                <ArrowRight className="h-5 w-5" /> Faire un test
               </Link>
             </Button>
           </div>

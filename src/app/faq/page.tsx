@@ -21,7 +21,7 @@ const faqData = [
   {
     question: "Faut-il créer un compte ou payer pour utiliser le site ?",
     answer:
-      "Non. Le site est entièrement gratuit et ne demande aucune inscription. Vous pouvez réviser les panneaux, les priorités, les questions théoriques et faire des quiz sans créer de compte.",
+      "Non. Le site est entièrement gratuit et ne demande aucune inscription. Vous pouvez réviser les panneaux, les priorités, les questions théoriques et faire des tests sans créer de compte.",
   },
   {
     question: "Quel est le dossier à fournir pour s'inscrire en auto-école ?",

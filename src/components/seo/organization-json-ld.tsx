@@ -9,7 +9,7 @@ export default function OrganizationJsonLd() {
         "@type": "Organization",
         name: siteConfig.name,
         url: siteConfig.url,
-        logo: `${siteConfig.url}/images/logonavbar.png`,
+        logo: `${siteConfig.url}/images/nav-logo.png`,
         description: siteConfig.description,
         email: siteConfig.contactEmail,
         areaServed: {

@@ -1,17 +1,17 @@
-export interface QuizSeriesItem {
+export interface TestSeriesItem {
   id: string
   name: string
   description: string
   image: string // chemin dans /public
 }
 
-export interface QuizSeries {
+export interface TestSeries {
   id: number
   title: string
-  items: QuizSeriesItem[]
+  items: TestSeriesItem[]
 }
 
-export const quizSeriesList: QuizSeries[] = [
+export const testSeriesList: TestSeries[] = [
   {
     id: 1,
     title: "Série 1",

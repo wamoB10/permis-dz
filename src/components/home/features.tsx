@@ -22,10 +22,10 @@ const sections = [
     href: "/questions-theoriques"
   },
   {
-    title: "Quiz d'entraînement",
+    title: "Test d'entraînement",
     description: "Testez-vous sur les panneaux et les priorités avec un score à la fin.",
     icon: ClipboardList,
-    href: "/quiz"
+    href: "/test"
   }
 ]
 

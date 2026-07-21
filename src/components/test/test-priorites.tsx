@@ -39,7 +39,7 @@ function generateQuestion() {
   }
 }
 
-export default function QuizPriorites() {
+export default function TestPriorites() {
   const [questions, setQuestions] = useState<ReturnType<typeof generateQuestion>[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
@@ -84,7 +84,7 @@ export default function QuizPriorites() {
   }
 
   if (finished) return <ScoreScreen score={score} total={QUESTIONS_COUNT} onRestart={restart} />
-  if (!current) return <div className="text-center py-20">Chargement du quiz...</div>
+  if (!current) return <div className="text-center py-20">Chargement du test...</div>
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">

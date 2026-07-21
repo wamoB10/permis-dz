@@ -24,7 +24,7 @@ function generateQuestion(allSigns: Sign[]) {
   return { sign: correctSign, options, correctIndex }
 }
 
-export default function QuizPanneaux() {
+export default function TestPanneaux() {
   const [questions, setQuestions] = useState<ReturnType<typeof generateQuestion>[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
@@ -72,7 +72,7 @@ export default function QuizPanneaux() {
     return <ScoreScreen score={score} total={QUESTIONS_COUNT} onRestart={restart} />
   }
 
-  if (!current) return <div className="text-center py-20">Chargement du quiz...</div>
+  if (!current) return <div className="text-center py-20">Chargement du test...</div>
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">

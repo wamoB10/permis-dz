@@ -47,7 +47,7 @@ export default function AboutPage() {
               <li>La liste complète des panneaux de signalisation avec explications détaillées</li>
               <li>Les règles de priorité illustrées et commentées</li>
               <li>Une banque de questions théoriques régulièrement enrichie</li>
-              <li>Des quiz interactifs pour vous tester en conditions réelles</li>
+              <li>Des tests interactifs pour vous tester en conditions réelles</li>
             </ul>
           </div>
         </div>
