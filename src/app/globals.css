@@ -25,23 +25,40 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    /* Fond principal - bleu nuit profond (pas noir pur) pour réduire la fatigue oculaire */
+    --background: 224 18% 11%;
+    --foreground: 210 40% 96%;
+
+    /* Cartes et surfaces surélevées - plus claires que le fond pour créer de la profondeur */
+    --card: 224 16% 15%;
+    --card-foreground: 210 40% 96%;
+
+    /* Primaire - bleu vif professionnel pour les accents */
     --primary: 217.2 91.2% 59.8%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --primary-foreground: 224 18% 11%;
+
+    /* Secondaire - surfaces interactives */
+    --secondary: 224 14% 20%;
+    --secondary-foreground: 210 40% 96%;
+
+    /* Atténué - fonds subtils (zones de survol, blocs de code) */
+    --muted: 224 16% 13%;
+    --muted-foreground: 215 20.2% 72%;
+
+    /* Accent - survol et états actifs */
+    --accent: 224 16% 24%;
+    --accent-foreground: 210 40% 96%;
+
+    /* Destructif - actions dangereuses */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 224.3 76.3% 48%;
+
+    /* Bordures - subtiles mais visibles */
+    --border: 224 12% 22%;
+    --input: 224 12% 26%;
+
+    /* Anneau de focus - correspond au bleu primaire */
+    --ring: 217.2 91.2% 59.8%;
   }
 }
 
