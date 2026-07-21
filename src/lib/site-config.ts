@@ -5,6 +5,6 @@ export const siteConfig = {
     "Préparez l'examen du code de la route algérien gratuitement. Révisez les panneaux, les priorités et entraînez-vous avec des tests.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.permi-algerie.dz",
   locale: "fr_DZ",
-  contactEmail: "privacy@permis-algerie.dz",
+  contactEmail: "privacypermis-algerie@gmail.com",
   ogImage: "/images/nav-logo.png",
 } as const

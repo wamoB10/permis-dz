@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "panneaux",
     "priorités",
     "test",
+    "code",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {

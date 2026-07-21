@@ -126,8 +126,8 @@ export default function PrivacyPage() {
           <Mail className="h-5 w-5 text-primary" />
           <p>
             Pour toute question relative à cette politique, vous pouvez nous écrire à :{" "}
-            <a href="mailto:privacy@permis-algerie.dz" className="text-primary hover:underline font-medium">
-              privacy@permis-algerie.dz
+            <a href="mailto:privacypermis-algerie@gmail.com" className="text-primary hover:underline font-medium">
+              privacypermis-algerie@gmail.com
             </a>
           </p>
         </div>

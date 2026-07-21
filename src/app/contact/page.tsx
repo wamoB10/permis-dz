@@ -11,7 +11,7 @@ export default function ContactPage() {
   e.preventDefault()
   const form = e.currentTarget
   const data = new FormData(form)
-  data.append("access_key", "a32d0b87-2cf5-4088-9bfa-a56cb656c236")
+  data.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "")
 
   const res = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
@@ -50,15 +50,15 @@ export default function ContactPage() {
             <p className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-primary" />
               <strong>Général :</strong>{" "}
-              <a href="mailto:contact@permis-algerie.dz" className="text-primary hover:underline">
-                contact@permis-algerie.dz
+              <a href="mailto:contactpermis-algerie@gmail.com" className="text-primary hover:underline">
+                contactpermis-algerie@gmail.com
               </a>
             </p>
             <p className="flex items-center gap-2">
               <Mail className="h-4 w-4 text-primary" />
               <strong>Confidentialité :</strong>{" "}
-              <a href="mailto:privacy@permis-algerie.dz" className="text-primary hover:underline">
-                privacy@permis-algerie.dz
+              <a href="mailto:privacypermis-algerie@gmail.com" className="text-primary hover:underline">
+                privacypermis-algerie@gmail.com
               </a>
             </p>
           </div>

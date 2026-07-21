@@ -79,8 +79,8 @@ export default function AboutPage() {
           <Mail className="h-5 w-5 text-primary" />
           <p>
             Vous souhaitez contribuer, signaler une erreur ou simplement nous encourager ? Écrivez-nous à :{" "}
-            <a href="mailto:contact@permis-algerie.dz" className="text-primary hover:underline font-medium">
-              contact@permis-algerie.dz
+            <a href="mailto:contactpermis-algerie@gmail.com" className="text-primary hover:underline font-medium">
+              contactpermis-algerie@gmail.com
             </a>
           </p>
         </div>
