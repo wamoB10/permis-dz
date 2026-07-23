@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t bg-muted/80">
       <div className="container py-8 md:py-12 ">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-20 pl-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           <div className="space-y-2">
             <h3 className="text-sm font-semibold">Navigation</h3>
             <ul className="space-y-1">
@@ -14,10 +14,10 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-2">
-            <h3 className="text-sm font-semibold">Tests</h3>
+            <h3 className="text-sm font-semibold">Séries</h3>
             <ul className="space-y-1">
-              <li><Link href="/series-panneaux" className="text-sm text-muted-foreground hover:text-primary">Test Panneaux</Link></li>
-              <li><Link href="/series-priorites" className="text-sm text-muted-foreground hover:text-primary">Test Priorités</Link></li>
+              <li><Link href="/series-panneaux" className="text-sm text-muted-foreground hover:text-primary">Série Panneaux</Link></li>
+              <li><Link href="/series-priorites" className="text-sm text-muted-foreground hover:text-primary">Série Priorités</Link></li>
             </ul>
           </div>
           <div className="space-y-2">
