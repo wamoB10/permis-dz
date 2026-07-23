@@ -1,0 +1,318 @@
+{
+  "site": {
+    "title": "Permi Algérie - Réussissez votre code de la route",
+    "titleTemplate": "%s | Permi Algérie",
+    "description": "Préparez l'examen du code de la route algérien gratuitement. Révisez les panneaux, les priorités et entraînez-vous avec des tests.",
+    "ogTitle": "Permi Algérie - Code de la route",
+    "twitterDescription": "Code de la route algérien gratuit.",
+    "keywords": [
+      "code de la route",
+      "Algérie",
+      "permis",
+      "examen",
+      "panneaux",
+      "priorités",
+      "test",
+      "code"
+    ]
+  },
+  "nav": {
+    "accueil": "Accueil",
+    "panneaux": "Panneaux",
+    "priorites": "Priorités",
+    "questionsTheoriques": "Questions théoriques",
+    "series": "Séries",
+    "accessibilityMenu": "Menu",
+    "ariaLabel": "Navigation principale"
+  },
+  "header": {
+    "siteName": "Permis Algérie",
+    "logoAlt": "Logo Permis Algérie"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "panneaux": "Panneaux",
+    "priorites": "Priorités",
+    "questions": "Questions",
+    "series": "Séries",
+    "seriesPanneaux": "Série Panneaux",
+    "seriesPriorites": "Série Priorités",
+    "informations": "Informations",
+    "faq": "FAQ",
+    "aPropos": "À propos",
+    "contact": "Contact",
+    "legal": "Légal",
+    "confidentialite": "Confidentialité",
+    "cookies": "Cookies",
+    "copyright": "© {year} Permis Algérie. Tous droits réservés."
+  },
+  "cookieConsent": {
+    "ariaLabel": "Consentement aux cookies",
+    "message": "Nous utilisons des cookies techniques et, avec votre accord, des cookies publicitaires (Google AdSense) pour financer ce service gratuit. Consultez notre",
+    "cookiePolicy": "politique des cookies",
+    "reject": "Refuser",
+    "accept": "Accepter"
+  },
+  "home": {
+    "heroBadge": "Préparez-vous au code 100% gratuitement !",
+    "heroTitle": "Réussissez le Code de la Route",
+    "heroTitleHighlight": "Algérien",
+    "heroDescription": "Apprenez et entraînez-vous gratuitement, sans inscription. Panneaux, priorités, questions théoriques et tests. Commencez immédiatement.",
+    "heroCtaPanneaux": "Réviser les panneaux",
+    "heroCtaTest": "Faire un test",
+    "featuresTitle": "Tout ce dont vous avez besoin pour réussir",
+    "featurePanneauxTitle": "Panneaux de signalisation",
+    "featurePanneauxDesc": "Tous les panneaux classés par catégorie avec explications détaillées.",
+    "featurePrioritesTitle": "Règles de priorité",
+    "featurePrioritesDesc": "Priorité à droite, stop, cédez le passage… Apprenez les règles essentielles.",
+    "featureQuestionsTitle": "Questions fréquentes",
+    "featureQuestionsDesc": "Retrouvez les questions théoriques posées à l'examen officiel.",
+    "featureTestsTitle": "Test d'entraînement",
+    "featureTestsDesc": "Testez-vous sur les panneaux et les priorités avec un score à la fin.",
+    "statsPanneaux": "Panneaux",
+    "statsPriorites": "Règles de priorité",
+    "statsQuestions": "Questions théoriques",
+    "statsTests": "Tests interactifs"
+  },
+  "panneaux": {
+    "title": "Panneaux de signalisation",
+    "description": "Tous les panneaux du code de la route algérien : danger, interdiction, obligation, indication, priorité, direction.",
+    "breadcrumb": "Panneaux de signalisation",
+    "searchPlaceholder": "Rechercher un panneau...",
+    "categories": {
+      "danger": "Danger",
+      "interdiction": "Interdiction",
+      "obligation": "Obligation",
+      "indication": "Indication",
+      "intersection": "Intersection",
+      "chemin_de_fer": "Chemin de fer",
+      "fin_interdiction": "Fin d’interdiction"
+    }
+  },
+  "priorites": {
+    "title": "Règles de priorité",
+    "description": "Priorité à droite, stop, cédez le passage, rond-point, et règles essentielles.",
+    "breadcrumb": "Règles de priorité",
+    "reglesEssentielles": "Règles essentielles",
+    "hierarchiePriorites": "Hiérarchie des priorités",
+    "hierarchieList": [
+      "Agent de circulation (policier)",
+      "Feux tricolores",
+      "Panneaux de signalisation",
+      "Priorité à droite (en l'absence de signalisation)"
+    ],
+    "remarque": "Remarque : Quand il n'y a pas de panneaux, la priorité est à droite.",
+    "reconnaitrePlaques": "Reconnaître les plaques",
+    "reconnaitreList": [
+      "Panneau STOP : angle à 90° dessiné sur la route d'un trait complet, arrêt obligatoire.",
+      "Cédez le passage : angle à 90° dessiné sur la route d'un trait découpé, ralentir et laisser passer.",
+      "Panneau à 150 m : annonce un STOP ou un Cédez le passage à 150 mètres.",
+      "Route prioritaire : losange jaune, vous êtes prioritaire.",
+      "Fin de priorité : losange barré, la priorité à droite reprend."
+    ],
+    "astuce": "Astuce : « الساير قبل الداير » (celui qui arrive avant celui qui tourne). Si deux véhicules ont leur droite libre en même temps, celui qui continue tout droit passe en premier puis celui qui tourne. En l'absence de panneaux, la priorité est à droite.",
+    "reglesDepassement": "Règles de dépassement",
+    "depassementList": [
+      "On ne double jamais par la droite.",
+      "On ne double pas si un panneau l'interdit.",
+      "On ne double pas si une ligne continue est présente."
+    ]
+  },
+  "questionsTheoriques": {
+    "title": "Questions théoriques",
+    "description": "Préparez l'examen théorique avec les questions les plus posées : documents, feux, conduite, sécurité.",
+    "breadcrumb": "Questions théoriques",
+    "all": "Tous",
+    "searchPlaceholder": "Rechercher une question...",
+    "categories": {
+      "general": "Général",
+      "documents": "Documents",
+      "conduite": "Conduite",
+      "signalisation": "Signalisation",
+      "securite": "Sécurité",
+      "eclairage": "Éclairage",
+      "vitesse": "Vitesse"
+    }
+  },
+  "test": {
+    "title": "Séries de révision",
+    "description": "Choisissez votre série de révision : Panneaux de signalisation ou Règles de priorité.",
+    "breadcrumb": "Séries de révision",
+    "chooseTitle": "Choisissez votre série de révision",
+    "chooseDescription": "Révisez les panneaux et les priorités avec des séries complètes, sans inscription.",
+    "panneauxCard": "Panneaux",
+    "panneauxCardDesc": "Révisez les 20 séries de 16 panneaux de signalisation.",
+    "panneauxCount": "20 séries",
+    "panneauxCta": "Commencer →",
+    "prioritesCard": "Priorités",
+    "prioritesCardDesc": "Révisez les règles de priorité avec des séries de situations.",
+    "prioritesCount": "20 séries",
+    "prioritesCta": "Commencer →",
+    "testTitle": "Testez-vous en conditions réelles",
+    "testDescription": "Une fois vos révisions terminées, passez un test chronométré pour évaluer votre niveau.",
+    "testPanneaux": "Test Panneaux",
+    "testPanneauxDesc": "10 questions aléatoires pour tester votre connaissance des panneaux de signalisation.",
+    "testPriorites": "Test Priorités",
+    "testPrioritesDesc": "6 questions sur les règles de priorité pour évaluer votre compréhension.",
+    "questionLabel": "Question {current}/{total}",
+    "scoreLabel": "Score: {score}",
+    "whatSign": "Quel est ce panneau ?",
+    "loading": "Chargement du test...",
+    "scoreTitle": "Résultat du test",
+    "scoreCongrats": "Félicitations !",
+    "scoreGood": "Bon travail !",
+    "scoreKeepGoing": "Continuez à réviser !",
+    "scoreMessage": "Vous avez obtenu {score} bonnes réponses sur {total}.",
+    "restart": "Recommencer",
+    "backToHome": "Retour à l'accueil",
+    "nextQuestion": "Question suivante",
+    "viewScore": "Voir le score",
+    "whatVehicle": "Quel vehicule est prioritaire dans cette situation ?"
+  },
+  "series": {
+    "title": "Séries de révision",
+    "description": "Choisissez une série de panneaux ou de priorités pour réviser.",
+    "breadcrumb": "Séries de révision",
+    "panneauxTitle": "Panneaux de signalisation",
+    "panneauxSubtitle": "Cliquez sur une série pour commencer.",
+    "prioritesTitle": "Règles de priorité",
+    "prioritesSubtitle": "Révisez les situations de priorité en séries dédiées."
+  },
+  "seriesDetail": {
+    "title": "Série {id}",
+    "backToSeries": "Retour aux séries",
+    "backToPanneaux": "Retour aux panneaux",
+    "signsToKnow": "{count} panneaux a connaitre",
+    "situationsToKnow": "{count} situations a connaitre",
+    "clickToReveal": "Cliquez pour reveler",
+    "none": "Aucune",
+    "viewAll": "Voir toutes les series"
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Questions fréquentes sur le code de la route algérien et le permis de conduire.",
+    "breadcrumb": "FAQ",
+    "items": [
+      {
+        "q": "Combien de fois puis-je passer l'examen du code ?",
+        "a": "Il n'y a pas de limite au nombre de tentatives pour l'examen du code de la route en Algérie. Vous pouvez vous réinscrire et repasser l'examen autant de fois que nécessaire."
+      },
+      {
+        "q": "Le code de la route algérien est-il différent du code français ?",
+        "a": "Oui, bien qu'il y ait des similitudes, le code de la route algérien a ses propres spécificités notamment en matière de signalisation, de priorités et de règles de conduite. Il est important d'étudier avec des supports adaptés au contexte algérien."
+      },
+      {
+        "q": "Est-ce que Permi Algérie est vraiment gratuit ?",
+        "a": "Oui, Permi Algérie est 100% gratuit. Vous n'avez pas besoin de créer un compte ou de vous inscrire pour accéder à tous les contenus : panneaux, priorités, questions théoriques et tests d'entraînement."
+      },
+      {
+        "q": "Puis-je utiliser le site depuis mon téléphone ?",
+        "a": "Oui, le site est responsive et s'adapte à tous les écrans (mobile, tablette, ordinateur). Vous pouvez réviser où que vous soyez."
+      },
+      {
+        "q": "Y a-t-il des publicités sur le site ?",
+        "a": "Le site peut afficher des annonces Google AdSense pour financer son fonctionnement et rester gratuit pour tous les utilisateurs. Nous respectons votre vie privée."
+      },
+      {
+        "q": "Comment sont organisées les séries de révision ?",
+        "a": "Il y a 20 séries pour les panneaux de signalisation (16 panneaux chacune) et 20 séries pour les priorités (8 situations chacune). Chaque série vous permet de réviser à votre rythme."
+      }
+    ]
+  },
+  "aPropos": {
+    "title": "À propos",
+    "description": "Découvrez Permi Algérie, le site gratuit pour préparer l'examen du code de la route algérien.",
+    "breadcrumb": "À propos",
+    "content": {
+      "intro": "est un site web gratuit créé pour aider les candidats au permis de conduire algérien à préparer l’examen du code de la route.",
+      "missionTitle": "Notre mission",
+      "missionText": "Notre objectif est de rendre la révision du code de la route accessible à tous, gratuitement et sans inscription. Nous croyons que chaque Algérien mérite une chance équitable de réussir son examen du permis de conduire.",
+      "offerTitle": "Ce que nous proposons",
+      "offerList": [
+        "Une base complète de panneaux de signalisation avec explications détaillées",
+        "Les règles de priorité essentielles illustrées par des schémas",
+        "Des questions théoriques inspirées de l'examen officiel",
+        "Des séries de révision pour un apprentissage progressif",
+        "Des tests interactifs pour évaluer vos connaissances"
+      ],
+      "contactTitle": "Contact",
+      "contactText": "Pour toute question ou suggestion, n'hésitez pas à nous contacter via la page Contact.",
+      "siteName": "Permi Algérie"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contactez-nous pour toute question ou suggestion concernant Permi Algérie.",
+    "breadcrumb": "Contact",
+    "form": {
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "successTitle": "Message envoyé !",
+      "successMessage": "Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.",
+      "errorMessage": "Une erreur est survenue. Veuillez réessayer.",
+      "subject": "Nouveau message depuis Permi Algérie"
+    }
+  },
+  "confidentialite": {
+    "title": "Politique de confidentialité",
+    "description": "Politique de confidentialité de Permi Algérie.",
+    "breadcrumb": "Confidentialité",
+    "content": {
+      "dataTitle": "Collecte des données",
+      "dataText": "Nous ne collectons aucune donnée personnelle vous concernant. Le site ne nécessite pas de création de compte et n'enregistre aucune information personnelle.",
+      "cookiesTitle": "Cookies",
+      "cookiesText": "Ce site utilise des cookies techniques nécessaires à son bon fonctionnement. Avec votre consentement, des cookies publicitaires (Google AdSense) peuvent être déposés pour afficher des annonces pertinentes et financer ce service gratuit.",
+      "adsenseTitle": "Google AdSense",
+      "adsenseText": "Nous utilisons Google AdSense pour afficher des publicités. Google peut utiliser des cookies pour diffuser des annonces basées sur vos visites précédentes sur ce site ou d'autres sites web. Vous pouvez désactiver la personnalisation des annonces sur la page Paramètres des annonces Google.",
+      "contactTitle": "Contact",
+      "contactText": "Pour toute question concernant cette politique de confidentialité, vous pouvez nous contacter à l'adresse email :",
+      "updated": "Dernière mise à jour : juillet 2026"
+    }
+  },
+  "cookies": {
+    "title": "Politique des cookies",
+    "description": "Politique des cookies de Permi Algérie.",
+    "breadcrumb": "Cookies",
+    "content": {
+      "whatTitle": "Que sont les cookies ?",
+      "whatText": "Les cookies sont de petits fichiers texte stockés sur votre navigateur lors de la visite d'un site web. Ils permettent au site de fonctionner correctement et d'améliorer votre expérience de navigation.",
+      "technicalTitle": "Cookies techniques",
+      "technicalText": "Ces cookies sont nécessaires au fonctionnement du site. Ils permettent la navigation et l'accès aux fonctionnalités essentielles (comme la mémorisation de votre préférence de langue). Aucun consentement n'est requis pour ces cookies.",
+      "adTitle": "Cookies publicitaires",
+      "adText": "Avec votre accord, nous utilisons Google AdSense qui peut déposer des cookies pour afficher des annonces adaptées à vos centres d'intérêt. Ces cookies sont soumis à votre consentement et vous pouvez les refuser à tout moment.",
+      "manageTitle": "Gérer vos préférences",
+      "manageText": "Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour être averti lorsqu'un cookie est déposé. Vous pouvez également modifier vos préférences à tout moment via la bannière de consentement.",
+      "updated": "Dernière mise à jour : juillet 2026"
+    }
+  },
+  "signClassification": {
+    "title": "Comment reconnaître un panneau ?",
+    "subtitle": "La forme et la couleur indiquent le type de message avant même de lire le symbole.",
+    "triangleBlanc": "Triangle fond blanc",
+    "triangleBlancDesc": "Annonce un danger. Ralentissez et soyez vigilant (virage, cassis, passage à niveau…).",
+    "triangleJaune": "Triangle fond jaune",
+    "triangleJauneDesc": "Danger temporaire (chantier, route dégradée). Adaptez votre allure.",
+    "rondBlanc": "Rond fond blanc, bord rouge",
+    "rondBlancDesc": "Interdiction (sens interdit, limitation de vitesse, interdiction de dépasser…).",
+    "rondBleu": "Rond fond bleu",
+    "rondBleuDesc": "Obligation (tourner à droite, piste cyclable, chaînes à neige…).",
+    "carreBleu": "Carré fond bleu",
+    "carreBleuDesc": "Indication (parking, arrêt bus, téléphone…).",
+    "carreBlanc": "Carré fond blanc",
+    "carreBlancDesc": "Indication ou fin de prescription (limitation de vitesse, direction…).",
+    "losangeJaune": "Losange jaune",
+    "losangeJauneDesc": "Route prioritaire. Vous avez la priorité aux intersections jusquà la fin de priorité.",
+    "stop": "Hexagone rouge (STOP)",
+    "stopDesc": "Arrêt obligatoire avant la ligne d’arrêt. Cédez le passage à tous les usagers.",
+    "finInterdiction": "Noir et blanc (rond barré)",
+    "finInterdictionDesc": "Fin d’interdiction. Toutes les restrictions précédentes sont levées.",
+    "arretStationnement": "Arrêt et Stationnement",
+    "arretStationnementDesc": "À gauche : interdiction d’arrêt et de stationnement. À droite : interdiction de stationnement (arrêt autorisé)."
+  }
+}

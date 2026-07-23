@@ -1,25 +1,32 @@
 "use client"
 
 import { useState, useMemo } from "react"
+import { useTranslations } from "next-intl"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Search } from "lucide-react"
 import SignCard from "./sign-card"
-import { signs } from "@/data/signs"
+import type { Sign } from "@/types"
 
-const categories = [
-  { value: "danger", label: "Danger" },
-  { value: "interdiction", label: "Interdiction" },
-  { value: "obligation", label: "Obligation" },
-  { value: "indication", label: "Indication" },
-  { value: "intersection", label: "Intersection" },
-  { value: "chemin_de_fer", label: "Chemin de fer" },
-  { value: "fin_interdiction", label: "Fin d'interdiction" },
+interface Props {
+  signs: Sign[]
+}
+
+const categoryKeys = [
+  { value: "danger", key: "danger" },
+  { value: "interdiction", key: "interdiction" },
+  { value: "obligation", key: "obligation" },
+  { value: "indication", key: "indication" },
+  { value: "intersection", key: "intersection" },
+  { value: "chemin_de_fer", key: "chemin_de_fer" },
+  { value: "fin_interdiction", key: "fin_interdiction" },
 ]
 
-export default function SignGrid() {
+export default function SignGrid({ signs }: Props) {
+  const t = useTranslations("panneaux")
   const [search, setSearch] = useState("")
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  const cats = t.raw("categories") as Record<string, string>
 
   const filtered = useMemo(() => {
     return signs.filter((sign) => {
@@ -31,7 +38,7 @@ export default function SignGrid() {
         : true
       return matchSearch && matchCategory
     })
-  }, [search, activeCategory])
+  }, [search, activeCategory, signs])
 
   return (
     <div>
@@ -39,14 +46,14 @@ export default function SignGrid() {
         <div className="relative">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
           <Input
-            placeholder="Rechercher un panneau..."
+            placeholder={t("searchPlaceholder")}
             className="pl-9"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
         <div className="flex flex-wrap gap-2">
-          {categories.map((cat) => (
+          {categoryKeys.map((cat) => (
             <Badge
               key={cat.value}
               variant={activeCategory === cat.value ? "default" : "outline"}
@@ -57,7 +64,7 @@ export default function SignGrid() {
                 )
               }
             >
-              {cat.label}
+              {cats[cat.key] || cat.key}
             </Badge>
           ))}
         </div>

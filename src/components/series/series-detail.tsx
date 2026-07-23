@@ -1,21 +1,26 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import SignImage from "@/components/ui/sign-image"
 import type { TestSeries } from "@/data/test-series"
-import { testSeriesList } from "@/data/test-series"
 
-export default function SeriesDetailClient({ series }: { series: TestSeries }) {
+interface Props {
+  series: TestSeries
+  seriesList: TestSeries[]
+}
+
+export default function SeriesDetailClient({ series, seriesList }: Props) {
+  const t = useTranslations("seriesDetail")
   const router = useRouter()
   const currentId = series.id
-  const prevSeries = testSeriesList.find(s => s.id === currentId - 1 && s.items.length > 0)
-  const nextSeries = testSeriesList.find(s => s.id === currentId + 1 && s.items.length > 0)
+  const prevSeries = seriesList.find(s => s.id === currentId - 1 && s.items.length > 0)
+  const nextSeries = seriesList.find(s => s.id === currentId + 1 && s.items.length > 0)
 
-  // Navigation au clavier (flèches gauche/droite)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft" && prevSeries) {
@@ -30,7 +35,6 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
 
   return (
     <div className="container py-10">
-      {/* Navigation entre séries (haut) */}
       <div className="flex items-center justify-between mb-8">
         <div>
           {prevSeries ? (
@@ -43,7 +47,7 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
           ) : (
             <Button variant="outline" disabled className="gap-2">
               <ChevronLeft className="h-4 w-4" />
-              Aucune
+              {t("none")}
             </Button>
           )}
         </div>
@@ -58,14 +62,14 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
             </Link>
           ) : (
             <Button variant="outline" disabled className="gap-2">
-              Aucune
+              {t("none")}
               <ChevronRight className="h-4 w-4" />
             </Button>
           )}
         </div>
       </div>
 
-      <p className="text-muted-foreground mb-8 text-center">16 panneaux à connaître</p>
+      <p className="text-muted-foreground mb-8 text-center">{t("signsToKnow", { count: 16 })}</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {series.items.map((item) => (
@@ -73,7 +77,6 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
         ))}
       </div>
 
-      {/* Navigation entre séries (bas) */}
       <div className="flex items-center justify-between mt-12">
         <div>
           {prevSeries ? (
@@ -86,12 +89,12 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
           ) : (
             <Button variant="outline" disabled className="gap-2">
               <ChevronLeft className="h-4 w-4" />
-              Aucune
+              {t("none")}
             </Button>
           )}
         </div>
         <Link href="/series">
-          <Button variant="secondary">Voir toutes les séries</Button>
+          <Button variant="secondary">{t("viewAll")}</Button>
         </Link>
         <div>
           {nextSeries ? (
@@ -103,7 +106,7 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
             </Link>
           ) : (
             <Button variant="outline" disabled className="gap-2">
-              Aucune
+              {t("none")}
               <ChevronRight className="h-4 w-4" />
             </Button>
           )}
@@ -115,6 +118,7 @@ export default function SeriesDetailClient({ series }: { series: TestSeries }) {
 
 function PanelCard({ item }: { item: TestSeries["items"][number] }) {
   const [revealed, setRevealed] = useState(false)
+  const t = useTranslations("seriesDetail")
 
   return (
     <div
@@ -139,7 +143,7 @@ function PanelCard({ item }: { item: TestSeries["items"][number] }) {
       )}
 
       {!revealed && (
-        <span className="text-xs text-muted-foreground mt-1">Cliquez pour révéler</span>
+        <span className="text-xs text-muted-foreground mt-1">{t("clickToReveal")}</span>
       )}
     </div>
   )

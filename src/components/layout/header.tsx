@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import MobileNav from "./mobile-nav"
 import ThemeToggle from "@/components/ui/theme-toggle"
+import LanguageSwitcher from "@/components/ui/language-switcher"
 
 export default function Header() {
   return (
@@ -35,6 +36,7 @@ export default function Header() {
             Séries
           </Link>
           <ThemeToggle />
+          <LanguageSwitcher />
         </nav>
         <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />

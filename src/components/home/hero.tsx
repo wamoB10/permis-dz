@@ -1,9 +1,12 @@
+import { getTranslations } from "next-intl/server"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, BookOpen } from "lucide-react"
 
-export default function Hero() {
+export default async function Hero({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: "home" })
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-primary/10 to-background py-20 md:py-32">
       <div className="container text-center">
@@ -18,7 +21,7 @@ export default function Hero() {
                 className="h-5 w-auto object-contain"
                 aria-hidden
               />
-              Préparez-vous au code 100% gratuitement !
+              {t("heroBadge")}
               <Image
                 src="/images/voiture.webp"
                 alt=""
@@ -30,21 +33,21 @@ export default function Hero() {
             </span>
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Réussissez le Code de la Route{" "}
-            <span className="text-primary">Algérien</span>
+            {t("heroTitle")}{" "}
+            <span className="text-primary">{t("heroTitleHighlight")}</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-            Apprenez et entraînez-vous gratuitement, sans inscription. Panneaux, priorités, questions théoriques et tests. Commencez immédiatement.
+            {t("heroDescription")}
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="gap-2">
               <Link href="/panneaux">
-                <BookOpen className="h-5 w-5" /> Réviser les panneaux
+                <BookOpen className="h-5 w-5" /> {t("heroCtaPanneaux")}
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="gap-2">
               <Link href="/test">
-                <ArrowRight className="h-5 w-5" /> Faire un test
+                <ArrowRight className="h-5 w-5" /> {t("heroCtaTest")}
               </Link>
             </Button>
           </div>

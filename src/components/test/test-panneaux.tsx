@@ -1,15 +1,19 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { signs } from "@/data/signs"
+import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ScoreScreen from "./score-screen"
 import SignImage from "@/components/ui/sign-image"
 import { cn } from "@/lib/utils"
-import { Sign } from "@/types"
+import type { Sign } from "@/types"
 
 const QUESTIONS_COUNT = 10
+
+interface Props {
+  signs: Sign[]
+}
 
 function shuffleArray<T>(array: T[]): T[] {
   return [...array].sort(() => Math.random() - 0.5)
@@ -24,7 +28,8 @@ function generateQuestion(allSigns: Sign[]) {
   return { sign: correctSign, options, correctIndex }
 }
 
-export default function TestPanneaux() {
+export default function TestPanneaux({ signs }: Props) {
+  const t = useTranslations("test")
   const [questions, setQuestions] = useState<ReturnType<typeof generateQuestion>[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
@@ -36,7 +41,7 @@ export default function TestPanneaux() {
     if (signs.length < 4) return
     const generated = Array.from({ length: QUESTIONS_COUNT }, () => generateQuestion(signs))
     setQuestions(generated)
-  }, [])
+  }, [signs])
 
   const current = questions[currentIndex]
 
@@ -72,13 +77,13 @@ export default function TestPanneaux() {
     return <ScoreScreen score={score} total={QUESTIONS_COUNT} onRestart={restart} />
   }
 
-  if (!current) return <div className="text-center py-20">Chargement du test...</div>
+  if (!current) return <div className="text-center py-20">{t("loading")}</div>
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <div className="flex justify-between text-sm text-muted-foreground">
-        <span>Question {currentIndex + 1}/{QUESTIONS_COUNT}</span>
-        <span>Score: {score}</span>
+        <span>{t("questionLabel", { current: currentIndex + 1, total: QUESTIONS_COUNT })}</span>
+        <span>{t("scoreLabel", { score })}</span>
       </div>
 
       <div className="h-2 w-full bg-muted rounded-full">
@@ -97,7 +102,7 @@ export default function TestPanneaux() {
             height={160}
             className="rounded-lg border bg-muted p-4 transition-transform duration-300 hover:scale-105"
           />
-          <p className="text-lg font-medium text-center">Quel est ce panneau ?</p>
+          <p className="text-lg font-medium text-center">{t("whatSign")}</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
             {current.options.map((opt, idx) => {
@@ -111,16 +116,12 @@ export default function TestPanneaux() {
                   onClick={() => handleSelect(idx)}
                   className={cn(
                     "h-auto py-3 px-4 justify-start rounded-xl border text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                    // Style avant sélection
                     selected === null &&
                       "border-input bg-background hover:bg-accent hover:text-accent-foreground hover:scale-[1.02] hover:shadow-sm",
-                    // Bonne réponse (vert émeraude clair)
                     selected !== null && isCorrectOption &&
                       "bg-emerald-500 text-white border-emerald-500 shadow-md scale-[1.02]",
-                    // Mauvais choix (rose/rouge clair)
                     selected !== null && isSelected && !isCorrectOption &&
                       "bg-rose-500 text-white border-rose-500 shadow-md",
-                    // Autres réponses après sélection : estompées
                     selected !== null && !isSelected && !isCorrectOption &&
                       "opacity-50 border-muted bg-muted text-muted-foreground"
                   )}
@@ -136,7 +137,7 @@ export default function TestPanneaux() {
               <p className="font-medium mb-1">{current.sign.name}</p>
               <p className="text-muted-foreground">{current.sign.longDescription}</p>
               <Button className="mt-3" onClick={nextQuestion}>
-                {currentIndex < QUESTIONS_COUNT - 1 ? "Question suivante" : "Voir le score"}
+                {currentIndex < QUESTIONS_COUNT - 1 ? t("nextQuestion") : t("viewScore")}
               </Button>
             </div>
           )}

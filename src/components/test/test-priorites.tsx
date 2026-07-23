@@ -1,31 +1,36 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { priorityRules } from "@/data/priorities"
+import { useTranslations } from "next-intl"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import ScoreScreen from "./score-screen"
 import SignImage from "@/components/ui/sign-image"
 import { cn } from "@/lib/utils"
+import type { PriorityRule } from "@/types"
 
 const QUESTIONS_COUNT = 6
 
-const correctAnswers: Record<string, string> = {
-  "priorite-droite": "Véhicule de droite",
-  "stop": "Véhicule sur la voie prioritaire",
-  "cedez-le-passage": "Véhicule sur la voie prioritaire",
-  "rond-point": "Véhicule déjà engagé dans le rond-point",
-  "route-prioritaire": "Vous êtes prioritaire",
+interface Props {
+  priorityRules: PriorityRule[]
 }
 
-function generateQuestion() {
-  const rule = priorityRules[Math.floor(Math.random() * priorityRules.length)]
-  const correct = correctAnswers[rule.id] || "Véhicule de droite"
+const correctAnswers: Record<string, string> = {
+  "priorite-droite": "Vehicule de droite",
+  "stop": "Vehicule sur la voie prioritaire",
+  "cedez-le-passage": "Vehicule sur la voie prioritaire",
+  "rond-point": "Vehicule deja engage dans le rond-point",
+  "route-prioritaire": "Vous etes prioritaire",
+}
+
+function generateQuestion(rules: PriorityRule[], t: (key: string) => string) {
+  const rule = rules[Math.floor(Math.random() * rules.length)]
+  const correct = correctAnswers[rule.id] || "Vehicule de droite"
   const fakeAnswers = [
-    "Véhicule de gauche",
-    "Aucun véhicule",
-    "Véhicule le plus rapide",
-    "Véhicule de droite",
+    "Vehicule de gauche",
+    "Aucun vehicule",
+    "Vehicule le plus rapide",
+    "Vehicule de droite",
   ]
   const options = [...new Set([correct, ...fakeAnswers])]
     .sort(() => Math.random() - 0.5)
@@ -33,13 +38,14 @@ function generateQuestion() {
   if (!options.includes(correct)) options[0] = correct
   return {
     rule,
-    question: "Quel véhicule est prioritaire dans cette situation ?",
+    question: t("whatVehicle"),
     options,
     correct,
   }
 }
 
-export default function TestPriorites() {
+export default function TestPriorites({ priorityRules }: Props) {
+  const t = useTranslations("test")
   const [questions, setQuestions] = useState<ReturnType<typeof generateQuestion>[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
@@ -49,9 +55,10 @@ export default function TestPriorites() {
 
   useEffect(() => {
     if (priorityRules.length === 0) return
-    const generated = Array.from({ length: QUESTIONS_COUNT }, generateQuestion)
+    const gen = () => generateQuestion(priorityRules, t)
+    const generated = Array.from({ length: QUESTIONS_COUNT }, gen)
     setQuestions(generated)
-  }, [])
+  }, [priorityRules, t])
 
   const current = questions[currentIndex]
 
@@ -79,18 +86,18 @@ export default function TestPriorites() {
     setShowExplanation(false)
     setFinished(false)
     if (priorityRules.length > 0) {
-      setQuestions(Array.from({ length: QUESTIONS_COUNT }, generateQuestion))
+      setQuestions(Array.from({ length: QUESTIONS_COUNT }, () => generateQuestion(priorityRules, t)))
     }
   }
 
   if (finished) return <ScoreScreen score={score} total={QUESTIONS_COUNT} onRestart={restart} />
-  if (!current) return <div className="text-center py-20">Chargement du test...</div>
+  if (!current) return <div className="text-center py-20">{t("loading")}</div>
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
       <div className="flex justify-between text-sm text-muted-foreground">
-        <span>Question {currentIndex + 1}/{QUESTIONS_COUNT}</span>
-        <span>Score: {score}</span>
+        <span>{t("questionLabel", { current: currentIndex + 1, total: QUESTIONS_COUNT })}</span>
+        <span>{t("scoreLabel", { score })}</span>
       </div>
       <div className="h-2 w-full bg-muted rounded-full">
         <div
@@ -140,7 +147,7 @@ export default function TestPriorites() {
               <p className="font-medium">{current.rule.title}</p>
               <p>{current.rule.explanation}</p>
               <Button className="mt-3" onClick={nextQuestion}>
-                {currentIndex < QUESTIONS_COUNT - 1 ? "Question suivante" : "Voir le score"}
+                {currentIndex < QUESTIONS_COUNT - 1 ? t("nextQuestion") : t("viewScore")}
               </Button>
             </div>
           )}
